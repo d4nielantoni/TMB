@@ -76,3 +76,14 @@ body {
 .explanation h2 {
   margin-bottom: 10px;
 }
+@media screen and (max-width: 600px) {
+  .calculator,
+  .explanation {
+    padding: 10px;
+    max-width: 300px;
+  }
+  
+  .calculator button {
+    font-size: 14px;
+  }
+}
