@@ -61,7 +61,8 @@ body {
   font-weight: bold;
 }
 
-.explanation {
+.explanation,
+.find-me {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -78,9 +79,29 @@ body {
   margin-bottom: 10px;
 }
 
+.find-me {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center; 
+}
+
+.find-me ul {
+  list-style: none; 
+  padding: 7px; 
+  margin: 0; 
+  display: flex; 
+}
+
+.find-me li {
+  margin: 0 10px; 
+}
+.find-me a{
+  color: black;
+}
 @media screen and (max-width: 600px) {
   .calculator,
-  .explanation {
+  .explanation,
+  .find-me {
     padding: 10px;
     max-width: 300px;
   }
