@@ -7,36 +7,48 @@
   <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
+  <div class="container">
+    <div class="calculator">
+      <h2>Calculadora de Taxa Metabólica Basal (TMB)</h2>
+      <div>
+        <label for="gender">Gênero:</label>
+        <select id="gender">
+          <option value="male">Masculino</option>
+          <option value="female">Feminino</option>
+        </select>
+      </div>
 
-  <div class="calculator">
-    <h2>Calculadora de Taxa Metabólica Basal (TMB)</h2>
-    <div>
-      <label for="gender">Gênero:</label>
-      <select id="gender">
-        <option value="male">Masculino</option>
-        <option value="female">Feminino</option>
-      </select>
+      <div>
+        <label for="age">Idade (anos):</label>
+        <input type="number" id="age" min="1">
+      </div>
+      <div>
+        <label for="weight">Peso (kg):</label>
+        <input type="number" id="weight" min="1">
+      </div>
+
+      <div>
+        <label for="height">Altura (cm):</label>
+        <input type="number" id="height" min="1">
+      </div>
+
+      <button onclick="calculateTMB()">Calcular TMB</button>
+      <div id="result"></div>
     </div>
 
-    <div>
-      <label for="age">Idade (anos):</label>
-      <input type="number" id="age" min="1">
+    <div class="explanation">
+      <h2>Explicação</h2>
+      <p>A TMB depende de três fatores: genética, idade e sexo</p>
+      <p>Vamos para as fórmulas:</p>
+      <ul class="explanation-list">
+        <li>Para os homens = 66 + (13,8 x peso em kg) + (5 x altura em cm) – 
+          (6,8 x idade em anos)</li>
+        <li>Para as mulheres = 655 + (9,6 x peso em kg) + (1,8 x altura em cm) – 
+          (4,7 x idade em anos)</li>
+      </ul>
     </div>
-    <div>
-      <label for="weight">Peso (kg):</label>
-      <input type="number" id="weight" min="1">
-    </div>
-
-    <div>
-      <label for="height">Altura (cm):</label>
-      <input type="number" id="height" min="1">
-    </div>
-
-    <button onclick="calculateTMB()">Calcular TMB</button>
-    <div id="result"></div>
   </div>
 
-  
   <script src="./assets/script.js"></script>
 </body>
 </html>

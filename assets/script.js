@@ -4,6 +4,11 @@ function calculateTMB() {
     const weight = parseFloat(document.getElementById('weight').value);
     const height = parseFloat(document.getElementById('height').value);
     let result = document.getElementById('result');
+
+    if (!gender || !age || !weight || !height) {
+      result.textContent = "Por favor, preencha todos os campos.";
+      return; 
+    }
   
     if (gender === 'male') {
       const tmb = 10 * weight + 6.25 * height - 5 * age + 5;
