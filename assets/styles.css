@@ -98,6 +98,7 @@ body {
 .find-me a{
   color: black;
 }
+
 @media screen and (max-width: 600px) {
   .calculator,
   .explanation,
@@ -108,5 +109,8 @@ body {
   
   .calculator button {
     font-size: 14px;
+  }
+  .find-me{
+    font-size: 18px;
   }
 }
