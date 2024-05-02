@@ -11,10 +11,10 @@ function calculateTMB() {
     }
   
     if (gender === 'male') {
-      const tmb = 10 * weight + 6.25 * height - 5 * age + 5;
+      const tmb = 66 + (13.8 * weight) + (5 * height) - (6.8 * age);
       result.textContent = `Sua TMB é ${tmb.toFixed(2)} calorias por dia.`;
     } else {
-      const tmb = 10 * weight + 6.25 * height - 5 * age - 161;
+      const tmb = 655 + (9.6 * weight) + (1.8 * height) - (4.7 * age);
       result.textContent = `Sua TMB é ${tmb.toFixed(2)} calorias por dia.`;
     }
   }
